@@ -1,0 +1,32 @@
+/*HEADER*/
+header{ position: sticky;
+        top: 0%;
+        z-index:10;
+    img {   width:20% ;
+            border-radius:  $borde;} 
+    .links a{       display: flex;
+                    font-family: $tipografia-general;
+                    color: $color-blanco;
+                    font-size: ($size)-6;
+                    font-weight: ($weight/2);
+                    font-style: $estilo;
+                    list-style-type: none;
+                    text-decoration: none;
+                    margin:2px;
+                    padding: 1px;
+                    background-color: $bg;
+                    border-radius: $borde;}}
+
+@media screen and (max-width: 768px)
+{    .links a{       display: flex;
+                    font-family: $tipografia-general;
+                    color: $color-blanco;
+                    font-size: ($size)-6;
+                    font-weight: ($weight/2);
+                    font-style: $estilo;
+                    list-style-type: none;
+                    text-decoration: none;
+                    margin:$espaciado-dos;
+                    padding: 2px;
+                    background-color: $bg;
+                    border-radius: $borde;}}

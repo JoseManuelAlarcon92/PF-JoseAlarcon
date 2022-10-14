@@ -1,0 +1,87 @@
+/*MAIN*/
+main{   @include flex-column-wrap;
+        width: $ancho;
+        align-content: $centrado;
+/*GALERIA*/
+    .icono img{    @include flex-row-wrap;
+                    border-radius: $borde;
+                    width: $ancho;}
+    .imagenes img{  @include flex-row-wrap;
+                    width: $ancho;
+                    height: $ancho;
+                    padding: $espaciado-dos;
+                    border-radius: $borde;
+                    &:hover {@include hover;}
+                    @include cursor;}             
+/*CONTACTO*/
+    form{   @include flex-row-wrap;
+            align-items: $centrado;
+                    .tit{   @include flex-column;
+                            align-items: $centrado;
+                            .texto {width: $ancho;
+                                    padding:($ancho)-95 ($ancho)-90;
+                                    background-color:$bg;
+                                    color:$color-blanco;
+                                    font-size: $ancho;
+                                    border-radius: $borde;
+                                    outline:none; 
+                                    margin: ($ancho)-95;
+                                    transition: 0.3s;
+                                    &:hover {@include hover;}
+                                    }
+                            .boton{ width:($ancho/2);
+                                    padding: ($ancho)-95 ($ancho)-90;
+                                    border-radius: $borde;
+                                    background-color:$bg;
+                                    color:$color-blanco;
+                                    border: none;
+                                    outline:none;
+                                    @include cursor;}}}
+/*PROGRAMACION*/
+    .card{  height: 40.625rem;
+            border-radius:$borde-dos;
+            overflow: hidden;
+            margin: 2px;
+            text-align: $centrado;
+            transition: 0.25s;
+            &:hover{ transform: translateY(-15px);
+                     box-shadow: 0 12px 16px;}
+            img{    width: $ancho;
+                    height: ($ancho/2);
+                    justify-items: $centrado;
+                    border-radius: $borde;}
+            .subtitle{ font-size: $size;
+                       font-style: $estilo;
+                       text-decoration:underline ;
+                       font-weight: bold;
+                       text-align:$centrado;
+                       font-family:$tipografia-alternativa; }
+            p{         margin: auto;
+                       font-size: ($size)-2;
+                       font-weight: ($weight/2);
+                       text-align: $centrado;
+                       font-family:$tipografia-alternativa;
+                       line-height: $line;}}
+/*NOSOTROS*/
+    article{ @include flex-row-wrap;
+             justify-items: $centrado;
+             align-items: $centrado;
+             .reseña{       @include flex-row-wrap;
+                            text-align: $centrado;
+                            justify-content: $centrado;
+                            width: $ancho;
+                            h2{    color: $color-blanco;
+                                    font-weight: bold;
+                                    font-size: $espaciado;
+                                    font-style: $estilo;
+                                    margin: $espaciado-dos;
+                                    padding: $espaciado-dos;}
+                            h4{     text-align: $centrado;
+                                    padding: $espaciado-dos;
+                                    margin: $espaciado-dos;
+                                    margin-left: ($ancho)-90;
+                                    margin-right: ($ancho)-90;
+                                    font-family:$tipografia-alternativa;
+                                    font-weight: $weight;
+                                    line-height: $line; }}}}
+

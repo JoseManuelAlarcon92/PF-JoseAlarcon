@@ -1,0 +1,21 @@
+/*FOOTER*/
+footer{ @include flex-column-wrap;
+        text-align: $centrado;
+    div{ h3{color: $color-blanco;
+            font-weight: $weight;
+            padding: $espaciado-dos;
+            font-family: $tipografia-alternativa;}
+    .logo1{ width: $espaciado;
+            height: $espaciado;}
+    .logo{  width: 150px;
+            height: 50px;}
+    h5{     font-family: $tipografia-alternativa;
+            color: $color-blanco;}
+    iframe{ width: $ancho;
+            border-radius: $borde;
+            margin-bottom: $espaciado-dos;}
+            .fixed{ @include flex-fixed-end;
+                    bottom: 20px;
+                    right: 20px;}
+            .fixed__logo{   width: 50px;
+                            border-radius: $borde;}}}
