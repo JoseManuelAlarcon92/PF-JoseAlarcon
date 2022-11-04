@@ -9,15 +9,23 @@ main{   @include flex-column-wrap;
     .imagenes img{  @include flex-row-wrap;
                     width: $ancho;
                     height: $ancho;
-                    padding: $espaciado-dos;
+                    padding:$espaciado-estandar;
                     border-radius: $borde;
                     &:hover {@include hover;}
-                    @include cursor;}             
+                    @include cursor;}
+    .fondo{     background-image: url(../mutimedia/IMG_E0665.JPG);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: ($ancho)-25;
+                box-shadow: 1px 5px 25px;
+           }
 /*CONTACTO*/
     form{   @include flex-row-wrap;
             align-items: $centrado;
-                    .tit{   @include flex-column;
-                            align-items: $centrado;
+            justify-content: $centrado;
+                        .tit{   @include flex-column;
+                                align-items: $centrado;
                             .texto {width: $ancho;
                                     padding:($ancho)-95 ($ancho)-90;
                                     background-color:$bg;
@@ -29,13 +37,10 @@ main{   @include flex-column-wrap;
                                     transition: 0.3s;
                                     &:hover {@include hover;}
                                     }
-                            .boton{ width:($ancho/2);
+                            .boton{ @extend .texto;
+                                    width:($ancho/2);
                                     padding: ($ancho)-95 ($ancho)-90;
-                                    border-radius: $borde;
-                                    background-color:$bg;
-                                    color:$color-blanco;
                                     border: none;
-                                    outline:none;
                                     @include cursor;}}}
 /*PROGRAMACION*/
     .card{  height: 40.625rem;
@@ -56,32 +61,37 @@ main{   @include flex-column-wrap;
                        font-weight: bold;
                        text-align:$centrado;
                        font-family:$tipografia-alternativa; }
-            p{         margin: auto;
+            p{         @extend .subtitle;
+                       margin: auto;
+                       text-decoration: none;
                        font-size: ($size)-2;
                        font-weight: ($weight/2);
-                       text-align: $centrado;
-                       font-family:$tipografia-alternativa;
                        line-height: $line;}}
 /*NOSOTROS*/
     article{ @include flex-row-wrap;
              justify-items: $centrado;
              align-items: $centrado;
-             .reseña{       @include flex-row-wrap;
-                            text-align: $centrado;
-                            justify-content: $centrado;
-                            width: $ancho;
-                            h2{    color: $color-blanco;
-                                    font-weight: bold;
-                                    font-size: $espaciado;
-                                    font-style: $estilo;
-                                    margin: $espaciado-dos;
-                                    padding: $espaciado-dos;}
-                            h4{     text-align: $centrado;
-                                    padding: $espaciado-dos;
-                                    margin: $espaciado-dos;
-                                    margin-left: ($ancho)-90;
-                                    margin-right: ($ancho)-90;
-                                    font-family:$tipografia-alternativa;
-                                    font-weight: $weight;
-                                    line-height: $line; }}}}
+             justify-content: $centrado;
+             background-image: url(../mutimedia/IMG_E0666.JPG);
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: contain;
+             width: 100%;
+             height: 75vh;
+             box-shadow: 1px 5px 25px;
+             .reseña{   @include flex-row-wrap;
+                        justify-content: $centrado;}
+             .parrafo1{ text-align: $centrado;
+                        text-decoration: underline;
+                        color:  $color-blanco;
+                        font-weight: bold;
+                        font-size: $espaciado;
+                        font-style: $estilo;}
+             .parrafo2{ color:$color-blanco;
+                        text-align: $centrado; 
+                        margin: 5%;
+                        font-family:$tipografia-alternativa;
+                        font-size:18px;
+                        font-weight:500;
+                        line-height: $line; }}}
 
