@@ -91,7 +91,7 @@ main{   @include flex-column-wrap;
                         text-align: $centrado; 
                         margin: 5%;
                         font-family:$tipografia-alternativa;
-                        font-size:18px;
+                        font-size:($size)-2;
                         font-weight:500;
                         line-height: $line; }}}
 
