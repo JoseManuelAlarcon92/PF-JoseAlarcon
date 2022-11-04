@@ -18,7 +18,7 @@ header{ position: sticky;
                     border-radius: $borde;}}
 
 @media screen and (max-width: 768px)
-{    .links a{       display: flex;
+{    .links a{      display: flex;
                     font-family: $tipografia-general;
                     color: $color-blanco;
                     font-size: ($size)-6;

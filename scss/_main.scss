@@ -74,24 +74,23 @@ main{   @include flex-column-wrap;
              justify-content: $centrado;
              background-image: url(../mutimedia/IMG_E0666.JPG);
              background-position: center;
-             background-repeat: no-repeat;
-             background-size: contain;
-             width: 100%;
-             height: 75vh;
+             background-repeat: repeat;
+             background-size:contain;
+             width: $ancho;
              box-shadow: 1px 5px 25px;
              .reseña{   @include flex-row-wrap;
                         justify-content: $centrado;}
-             .parrafo1{ text-align: $centrado;
-                        text-decoration: underline;
-                        color:  $color-blanco;
-                        font-weight: bold;
-                        font-size: $espaciado;
-                        font-style: $estilo;}
-             .parrafo2{ color:$color-blanco;
-                        text-align: $centrado; 
-                        margin: 5%;
-                        font-family:$tipografia-alternativa;
-                        font-size:($size)-2;
-                        font-weight:500;
-                        line-height: $line; }}}
+                h2{ text-align: $centrado;
+                    text-decoration: underline;
+                   color:  $color-blanco;
+                   font-weight: bold;
+                   font-size: $espaciado;
+                   font-style: $estilo;} 
+                p{ color:$color-blanco;
+                   text-align: $centrado; 
+                   margin: 5%;
+                   font-family:$tipografia-alternativa;
+                   font-size:($size);
+                   font-weight:($weight)-100;
+                   line-height: $line; }}}
 

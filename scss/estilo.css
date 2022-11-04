@@ -165,10 +165,9 @@ main article {
   justify-content: center;
   background-image: url(../mutimedia/IMG_E0666.JPG);
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: contain;
   width: 100%;
-  height: 75vh;
   box-shadow: 1px 5px 25px;
 }
 main article .reseña {
@@ -176,7 +175,7 @@ main article .reseña {
   flex-wrap: row wrap;
   justify-content: center;
 }
-main article .parrafo1 {
+main article h2 {
   text-align: center;
   text-decoration: underline;
   color: white;
@@ -184,12 +183,12 @@ main article .parrafo1 {
   font-size: 2.5rem;
   font-style: italic;
 }
-main article .parrafo2 {
+main article p {
   color: white;
   text-align: center;
   margin: 5%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1, 6;
 }
@@ -203,41 +202,51 @@ footer {
 }
 footer div h3 {
   color: white;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
   padding: 0, 25rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-footer div h3 a {
+footer div .ref a {
+  display: flex;
+  justify-content: center;
+  font-family: Concert, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  list-style-type: none;
+  text-decoration: none;
   color: white;
-  font-weight: 600;
+  font-weight: 400;
   padding: 0, 25rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
 }
-footer div .logo1 {
+footer .logo1 {
   width: 2.5rem;
   height: 2.5rem;
 }
-footer div .logo {
+footer .logo {
   width: 150px;
   height: 50px;
 }
-footer div h5 {
+footer h5 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: white;
+  font-weight: 400;
+  font-size: 14px;
 }
-footer div iframe {
+footer iframe {
   width: 50%;
   border-radius: 1rem 1rem;
   margin-bottom: 0, 25rem;
 }
-footer div .fixed {
+footer .fixed {
   display: flex;
   position: fixed;
   justify-content: end;
   bottom: 20px;
   right: 20px;
 }
-footer div .fixed__logo {
+footer .fixed__logo {
   width: 50px;
   border-radius: 1rem 1rem;
 }/*# sourceMappingURL=estilo.css.map */
